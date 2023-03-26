@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:;" />
+    <title>Illumination</title>
+    <script src="./main.js"></script>
+    <style>
+      .controller {
+        display: flex;
+        width: 100%;
+      }
+      .controller-group {
+        display: flex;
+        flex-direction: column;
+        margin: auto 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Illumination</h1>
+    <canvas id="glcanvas" width="640" height="480"></canvas>
+    <div class="controller">
+      <span class="controller-group">
+        <div>
+          light X
+          <br />
+          <input
+            type="range"
+            id="light_x"
+            name="light_x"
+            min="-50"
+            max="50"
+            step="0.1"
+            value="-20"
+          />
+        </div>
+        <div>
+          light Y
+          <br />
+          <input
+            type="range"
+            id="light_y"
+            name="light_y"
+            min="-50"
+            max="50"
+            step="0.1"
+            value="10"
+          />
+        </div>
+        <div>
+          light Z
+          <br />
+          <input
+            type="range"
+            id="light_z"
+            name="light_z"
+            min="-50"
+            max="50"
+            step="0.1"
+            value="0"
+          />
+        </div>
+      </span>
+    </div>
+  </body>
+</html>

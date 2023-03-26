@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build:html": "html-minifier-terser -o dist/index.html --collapse-whitespace --remove-comments --minify-css true index.html",
+    "build:js": "webpack --mode=production ./index.js",
+    "build": "npm run build:html && npm run build:js",
+    "dev": "cp index.html dist/index.html && webpack --mode=development ./index.js"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.1.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-glsl-minify": "^1.5.0"
+  }
+}
